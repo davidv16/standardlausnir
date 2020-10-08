@@ -14,15 +14,15 @@ import BlogContent from "../elements/blog/BlogContent";
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Welcome to my World',
+        category: '',
         description: '',
         buttonText: '',
         buttonLink: ''
     }
 ]
 const PortfolioLanding = () => {
-    let title = 'About Me',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
+    let title = 'Um mig',
+        description = 'Ég heiti Davíð V. Arnalds og er kerfisfræðingur og rafeindavirki. Ég sérhæfi mig í vefsíðu/hugbúnaðargerð, tölvu og tækniráðgjöf og viðgerðum á rafeindabúnaði.';
     const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
@@ -40,14 +40,15 @@ const PortfolioLanding = () => {
                                     <div className="col-lg-12">
                                         <div className={`inner ${value.textPosition}`}>
                                             {value.category ? <span>{value.category}</span> : ''}
-                                            <h1 className="title">Hi, I’m Jone Doe <br/>
+                                            <h1 className="title">Standard lausnir <br/>
                                             <TextLoop>
-                                                <span> JS Developer.</span>
-                                                <span> UI/UX Designer.</span>
-                                                <span> Content Writter.</span>
+                                                <span> Vefsíðugerð</span>
+                                                <span> Hugbúnaðargerð</span>
+                                                <span> Tölvu og tækniráðgjöf</span>
+
                                             </TextLoop>{" "}
                                             </h1>
-                                            <h2>based in USA.</h2>
+                                            <h2></h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
@@ -69,7 +70,7 @@ const PortfolioLanding = () => {
                             <div className="row row--35 align-items-center">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/about-8.jpg" alt="About Images"/>
+                                        <img className="w-100" src="/assets/images/about/13221049_1262594263750778_2277274847664403457_n.jpg" alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -98,8 +99,8 @@ const PortfolioLanding = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                    <h2 className="title">My Awesome Service</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">Þjónusta</h2>
+                                    <p>Standard lausnir kappkosta að veita persónulega, faglega og sanngjarna þjónustu.</p>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +133,7 @@ const PortfolioLanding = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                        <a className="rn-button-style--2 btn-solid" href="/blog"><span>View More</span></a>
+                                        <a className="rn-button-style--2 btn-solid" href="/blog"><span>Nánar</span></a>
                                     </div>
                                 </div>
                             </div>

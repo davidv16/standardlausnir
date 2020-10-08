@@ -4,10 +4,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 class TabsTwo extends Component{
     render(){
         let 
-        tab1 = "Main skills",
-        tab2 = "Awards",
-        tab3 = "Experience",
-        tab4 = "Education & Certification";
+        tab1 = "Megin áherslur",
+        tab3 = "Reynsla",
+        tab4 = "Menntun";
         const { tabStyle } = this.props
         return(
             <div>
@@ -19,7 +18,6 @@ class TabsTwo extends Component{
                                 <Tabs>
                                     <TabList  className={`${tabStyle}`}>
                                         <Tab>{tab1}</Tab>
-                                        <Tab>{tab2}</Tab>
                                         <Tab>{tab3}</Tab>
                                         <Tab>{tab4}</Tab>
                                     </TabList>
@@ -28,16 +26,20 @@ class TabsTwo extends Component{
                                         <div className="single-tab-content">
                                             <ul>
                                                 <li>
-                                                    <a href="/service">User experience design <span> - UI/UX</span></a>
-                                                    Delight the user and make it work.
+                                                    <a href="/service">Vefsíðugerð <span> - Wordpress</span></a>
+                                                    Smíði fallegra og snyrtilegra heimasíðna eftir þörfum.
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Web and user interface design<span> - Development</span></a>
-                                                    Websites, web experiences, ...
+                                                    <a href="/service">Vefþjónustuþróun <span> - React, Vue, .net, nodeJS ofl.</span></a>
+                                                    Vefþjónustusmíði, vefforritun, breytingar og bætur.
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Interaction design <span> - Animation</span></a>
-                                                    I like to move it move it.
+                                                    <a href="/service">Skýjalausnir <span> - Amazon AWS.</span></a>
+                                                    Hýsing vefja, tölvupósts og gagnagrunna í skýi.
+                                                </li>
+                                                <li>
+                                                    <a href="/service">Tölvuráðgjöf og viðgerðir <span> </span></a>
+                                                    Ráðgjöf, tölvuaðstoð og viðgerðir á rafeindabúnaði
                                                 </li>
                                             </ul>
                                         </div>
@@ -47,31 +49,19 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Awwwards.com <span>- Winner</span></a> 2019 - 2020
+                                                   <a href="/service">Forritari<span> - Standard lausnir</span></a> 2019 - núverandi
                                                </li>
                                                <li>
-                                                   <a href="/service">CSS Design Awards <span>- Winner</span></a> 2017 - 2018
+                                                   <a href="/service">Þjónustustjóri<span> - OBA</span></a> 2014 - núverandi
                                                </li>
                                                <li>
-                                                   <a href="/service">Design nominees <span>- site of the day</span></a> 2013- 2014
-                                               </li>
-                                           </ul>
-                                       </div>
-                                    </TabPanel>
-
-
-
-                                    <TabPanel>
-                                       <div className="single-tab-content">
-                                           <ul>
-                                               <li>
-                                                   <a href="/service">Sr. Front-end Engineer<span> - Google</span></a> 2018 - Current
+                                                   <a href="/service">Tæknimaður<span> - Optima </span></a> 2013 - 2014
                                                </li>
                                                <li>
-                                                   <a href="/service">Front-end Engineer<span> - Microsoft</span></a> 2017 - 2018
+                                                   <a href="/service">Umsjónarmaður hljóð og mynd verkstæðis<span> - Nýherji </span></a> 2011 - 2013
                                                </li>
                                                <li>
-                                                   <a href="/service">Software Engineer<span> - Alibaba </span></a> 2013- 2014
+                                                   <a href="/service">Rafeindavirki<span> - Marel </span></a> 2008 - 2011
                                                </li>
                                            </ul>
                                        </div>
@@ -81,13 +71,10 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">BSc In CSE<span> - ABC University, Los Angeles, CA</span></a> 2010
+                                                   <a href="/service">Diplóma í Tölvunarfræði<span> - Háskólinn í Reykjavík</span></a> 2020
                                                </li>
                                                <li>
-                                                   <a href="/service">Diploma in Computer Science<span> - Gamma Technical Institute</span></a> 2009
-                                               </li>
-                                               <li>
-                                                   <a href="/service">Graphic Designer<span> - ABC Institute, Los Angeles, CA</span></a> 2007
+                                                   <a href="/service">Sveinspróf í Rafeindavirkjun<span> - Tækniskólinn í Reykjavík</span></a> 2010
                                                </li>
                                            </ul>
                                        </div>
