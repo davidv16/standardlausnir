@@ -18,8 +18,8 @@ class ContactThree extends Component{
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
                                 <h2 className="title">{this.props.contactTitle}</h2>
-                                <p className="description">I am available for freelance work. Connect with me via phone: <a href="tel:+8801923088574">01923 088574</a> or email:
-                                    <a href="mailto:admin@example.com"> admin@example.com</a> </p>
+                                <p className="description">Ég er laus í verkefni. Hafðu samband í síma: <a href="tel:+3548460999">846-0999</a> eða í email:
+                                    <a href="mailto:standardlausnir@standardlausnir.is"> standardlausnir@standardlausnir.is</a> </p>
                             </div>
                             <div className="form-wrapper">
                                 <form>
@@ -30,7 +30,7 @@ class ContactThree extends Component{
                                             id="item01"
                                             value={this.state.rnName}
                                             onChange={(e)=>{this.setState({rnName: e.target.value});}}
-                                            placeholder="Your Name *"
+                                            placeholder="Nafn *"
                                         />
                                     </label>
 
@@ -41,7 +41,7 @@ class ContactThree extends Component{
                                             id="item02"
                                             value={this.state.rnEmail}
                                             onChange={(e)=>{this.setState({rnEmail: e.target.value});}}
-                                            placeholder="Your email *"
+                                            placeholder="Email *"
                                         />
                                     </label>
 
@@ -52,7 +52,7 @@ class ContactThree extends Component{
                                             id="item03"
                                             value={this.state.rnSubject}
                                             onChange={(e)=>{this.setState({rnSubject: e.target.value});}}
-                                            placeholder="Write a Subject"
+                                            placeholder="Viðfangsefni"
                                         />
                                     </label>
                                     <label htmlFor="item04">
@@ -62,10 +62,10 @@ class ContactThree extends Component{
                                             name="message"
                                             value={this.state.rnMessage}
                                             onChange={(e)=>{this.setState({rnMessage: e.target.value});}}
-                                            placeholder="Your Message"
+                                            placeholder="Skilaboð"
                                         />
                                     </label>
-                                    <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit</button>
+                                    <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Senda fyrirspurn</button>
                                 </form>
                             </div>
                         </div>

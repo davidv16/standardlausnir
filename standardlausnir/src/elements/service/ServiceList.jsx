@@ -10,27 +10,12 @@ const ServiceList = [
     {
         icon: <FiLayers />,
         title: 'Vefsíðugerð',
-        description: 'Smíða wordpress vefsíður fyrir lítil og miðlungs fyrirtæki, vefverslanir, upplýsingasíður og einfaldari síður.'
+        description: 'Smíða wordpress vefsíður fyrir lítil og miðlungs fyrirtæki. Vefverslanir og einfaldar upplýsingasíður.'
     },
     {
         icon: <FiUsers />,
-        title: 'Tölvuaðstoð og ráðgjöf',
-        description: 'Aðstoða með helstu tölvuvandamál, uppsetning hugbúnaðar og vélbúnaðar.'
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Skýjalausnir',
-        description: 'Aðstoða við hýsingu á vefsíðum, tölvupóstum og geymslu á gögnum í skýjalausnum.'
-    },
-    {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Tölvu/tækniaðstoð og ráðgjöf',
+        description: 'Aðstoða með helstu tölvuvandamál, uppsetning hugbúnaðar, vélbúnaðar og viðgerðir.'
     }
 ]
 

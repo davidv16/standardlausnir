@@ -20,13 +20,13 @@ const SlideList = [
         buttonLink: ''
     }
 ]
-const PortfolioLanding = () => {
+const Home = () => {
     let title = 'Um mig',
         description = 'Ég heiti Davíð V. Arnalds og er kerfisfræðingur og rafeindavirki. Ég sérhæfi mig í vefsíðu/hugbúnaðargerð, tölvu og tækniráðgjöf og viðgerðum á rafeindabúnaði.';
     const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
-            <Helmet pageTitle="Portfolio Landing" />
+            <Helmet pageTitle="Heim" />
 
             <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
@@ -183,7 +183,7 @@ const PortfolioLanding = () => {
             {/* Start COntact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--1">
-                    <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Hire Me." />
+                    <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Vinnum saman." />
                 </div>
             </div>
             {/* End COntact Area */}
@@ -201,4 +201,4 @@ const PortfolioLanding = () => {
     )
 }
 
-export default PortfolioLanding;
+export default Home;
