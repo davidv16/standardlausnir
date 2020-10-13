@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+import bleh from "../../../public/assets/images/portfolio/67371d34ea961aa2ddb8db3781dc7b58.png"
 const PortfolioListContent = [
     {
         image: 'image-1',
         category: 'Development',
-        title: 'Getting tickets to the big show'
+        title: 'Maul Reykjavík'
     },
     {
         image: 'image-2',
