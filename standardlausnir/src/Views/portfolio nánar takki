@@ -1,0 +1,7 @@
+<div className="row">
+                                <div className="col-lg-12">
+                                    <div className="view-more-btn mt--60 mt_sm--30 text-center">
+                                        <a className="rn-button-style--2 btn-solid" href="/blog"><span>Nánar</span></a>
+                                    </div>
+                                </div>
+                            </div>

@@ -1,30 +1,30 @@
 import React, { Component } from "react";
-import bleh from "../../../public/assets/images/portfolio/67371d34ea961aa2ddb8db3781dc7b58.png"
+
 const PortfolioListContent = [
     {
         image: 'image-1',
-        category: 'Development',
+        category: 'Hugbúnaðargerð',
         title: 'Maul Reykjavík'
     },
     {
         image: 'image-2',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        category: 'Tölvuþjónusta',
+        title: 'Ísprjón ehf.'
     },
     {
         image: 'image-3',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        category: 'Vefsíðugerð',
+        title: 'Friggz sf.'
     },
     {
         image: 'image-4',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        category: 'Vefsíðugerð',
+        title: 'Ottó B Arnar ehf.'
     },
     {
         image: 'image-3',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        category: 'Hugbúnaðargerð',
+        title: 'SAT4N - Simple administrative tools for networking.'
     },
     {
         image: 'image-4',
@@ -50,9 +50,7 @@ class PortfolioList extends Component{
                                 <div className="inner">
                                     <p>{value.category}</p>
                                     <h4><a href="/portfolio-details">{value.title}</a></h4>
-                                    <div className="portfolio-button">
-                                        <a className="rn-btn" href="/portfolio-details">View Details</a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
