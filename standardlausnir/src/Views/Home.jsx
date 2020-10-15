@@ -25,7 +25,7 @@ const SlideList = [
 const Home = () => {
     let title = 'Um mig',
         description = 'Ég heiti Davíð V. Arnalds og er kerfisfræðingur og rafeindavirki. Ég sérhæfi mig í vefsíðu/hugbúnaðargerð, tölvu og tækniráðgjöf og viðgerðum á rafeindabúnaði.';
-    const PostList = BlogContent.slice(0 , 3);
+    // const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
             <Helmet pageTitle="Heim" />
@@ -131,13 +131,6 @@ const Home = () => {
                             </div>
                             <div className="row">
                                 <PortfolioList styevariation="text-center mt--40" column="col-lg-4 col-md-6 col-sm-6 col-12" item="6" />
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                        <a className="rn-button-style--2 btn-solid" href="/blog"><span>Nánar</span></a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

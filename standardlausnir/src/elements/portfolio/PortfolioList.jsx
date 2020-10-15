@@ -2,34 +2,45 @@ import React, { Component } from "react";
 
 const PortfolioListContent = [
     {
-        image: 'image-1',
+        image: 'maul',
         category: 'Hugbúnaðargerð',
-        title: 'Maul Reykjavík'
+        title: 'Maul Reykjavík',
+        description: 'Forritun og gagnavinnsla í Amazon AWS.',
+        link:'https://maul.is'
     },
     {
-        image: 'image-2',
+        image: 'vidgerdir',
         category: 'Tölvuþjónusta',
-        title: 'Ísprjón ehf.'
+        title: 'Ísprjón ehf.',
+        description: 'Tækniþjónusta og viðgerðir.'
     },
     {
-        image: 'image-3',
+        image: 'friggz',
         category: 'Vefsíðugerð',
-        title: 'Friggz sf.'
+        title: 'Friggz sf.',
+        description: 'Vefsíða Friggz sf. smíðuð í Wordpress af Standard lausnum ',
+        link:'https://friggz.is'
     },
     {
-        image: 'image-4',
+        image: 'oba',
         category: 'Vefsíðugerð',
-        title: 'Ottó B Arnar ehf.'
+        title: 'Ottó B Arnar ehf.',
+        description: 'Vefsíða Ottó B Arnar ehf. í Wordpress af Standard lausnum',
+        link:'https://oba.is'
     },
     {
-        image: 'image-3',
+        image: 'code',
         category: 'Hugbúnaðargerð',
-        title: 'SAT4N - Simple administrative tools for networking.'
+        title: 'SAT4N - Simple Administrative Tools for Networking.',
+        description: 'Lokaverkefni í tölvunarfræði í HR. Vefþjónusta á local neti sem stýrir netbúnaði frá cisco.',
+        link:'http://hdl.handle.net/1946/34047'
     },
     {
-        image: 'image-4',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        image: 'standardlausnir',
+        category: 'Vefsíðugerð',
+        title: 'Standard lausnir',
+        description: 'Vefsíða standardlausnir.is skrifuð í react.js og node.js api í AWS lambda fyrir contact form. Lén og vefur hýstur á Amazon AWS.',
+        link:'standardlausnir.is'
     }
 ]
 
@@ -40,21 +51,23 @@ class PortfolioList extends Component{
         return(
             <React.Fragment> 
                 {list.map((value , index) => (
-                    <div className={`${column}`} key={index}>
-                        <div className={`portfolio ${styevariation}`}>
-                            <div className="thumbnail-inner">
-                                <div className={`thumbnail ${value.image}`}></div>
-                                <div className={`bg-blr-image ${value.image}`}></div>
-                            </div>
-                            <div className="content">
-                                <div className="inner">
-                                    <p>{value.category}</p>
-                                    <h4><a href="/portfolio-details">{value.title}</a></h4>
-                                    
+                        <div className={`${column}`} key={index}>
+                            <a target="_blank" href={value.link}>
+                                <div className={`portfolio ${styevariation}`}>
+                                    <div className="thumbnail-inner">
+                                        <div className={`thumbnail ${value.image}`}></div>
+                                        <div className={`bg-blr-image ${value.image}`}></div>
+                                    </div>
+                                    <div className="content">
+                                            <div className="inner">
+                                                <p>{value.category}</p>
+                                                <h4>{value.title}</h4>
+                                                <h5>{value.description}</h5>
+                                            </div>                                
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </a>    
+                        </div>                 
                 ))}
                
             </React.Fragment>
