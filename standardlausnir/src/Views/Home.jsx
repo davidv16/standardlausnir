@@ -36,7 +36,7 @@ const Home = () => {
                 <div className="slider-wrapper">
                     {/* Start Single Slide */}
                     {SlideList.map((value , index) => (
-                        <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25" key={index}>
+                        <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image coverphoto" key={index}>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-12">
@@ -143,7 +143,7 @@ const Home = () => {
             {/* Start COntact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--5">
-                    <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Vinnum saman." />
+                    <ContactThree contactImages="/assets/images/about/ben-kolde-bs2Ba7t69mM-unsplash.jpg" contactTitle="Vinnum saman." />
                 </div>
             </div>
             {/* End COntact Area */}

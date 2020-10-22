@@ -4,12 +4,33 @@ class ContactThree extends Component{
     constructor(props){
         super(props);
         this.state = {
-            rnName: '',
-            rnEmail: '',
-            rnSubject: '',
-            rnMessage: '',
+            Name: '',
+            Email: '',
+            Subject: '',
+            Message: '',
         };
     }
+    onNameChange(e) {
+        this.setState({Name: e.target.value})
+    }
+
+    onEmailChange(e) {
+        this.setState({Email: e.target.value})
+    }
+
+    onSubjectChange(e) {
+        this.setState({Subject: e.target.value})
+    }
+
+    onMessageChange(e) {
+        this.setState({Message: e.target.value})
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        console.log(this.state);
+    }
+
     render(){
         return(
             <div className="contact-form--1">
@@ -22,46 +43,46 @@ class ContactThree extends Component{
                                     <a href="mailto:standardlausnir@standardlausnir.is"> standardlausnir@standardlausnir.is</a> </p>
                             </div>
                             <div className="form-wrapper">
-                                <form>
-                                    <label htmlFor="item01">
+                                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                                    <label htmlFor="name">
                                         <input
                                             type="text"
                                             name="name"
                                             id="item01"
-                                            value={this.state.rnName}
-                                            onChange={(e)=>{this.setState({rnName: e.target.value});}}
+                                            value={this.state.Name}
+                                            onChange={(e)=>{this.setState({Name: e.target.value});}}
                                             placeholder="Nafn *"
                                         />
                                     </label>
 
-                                    <label htmlFor="item02">
+                                    <label htmlFor="email">
                                         <input
                                             type="text"
                                             name="email"
                                             id="item02"
-                                            value={this.state.rnEmail}
-                                            onChange={(e)=>{this.setState({rnEmail: e.target.value});}}
+                                            value={this.state.Email}
+                                            onChange={(e)=>{this.setState({Email: e.target.value});}}
                                             placeholder="Email *"
                                         />
                                     </label>
 
-                                    <label htmlFor="item03">
+                                    <label htmlFor="subject">
                                         <input
                                             type="text"
                                             name="subject"
                                             id="item03"
-                                            value={this.state.rnSubject}
-                                            onChange={(e)=>{this.setState({rnSubject: e.target.value});}}
+                                            value={this.state.Subject}
+                                            onChange={(e)=>{this.setState({Subject: e.target.value});}}
                                             placeholder="Viðfangsefni"
                                         />
                                     </label>
-                                    <label htmlFor="item04">
+                                    <label htmlFor="message">
                                         <textarea
                                             type="text"
                                             id="item04"
                                             name="message"
-                                            value={this.state.rnMessage}
-                                            onChange={(e)=>{this.setState({rnMessage: e.target.value});}}
+                                            value={this.state.Message}
+                                            onChange={(e)=>{this.setState({Message: e.target.value});}}
                                             placeholder="Skilaboð"
                                         />
                                     </label>

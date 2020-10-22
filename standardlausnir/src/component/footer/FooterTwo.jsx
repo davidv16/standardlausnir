@@ -2,9 +2,8 @@ import React from 'react';
 import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
+    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/standardlausnir'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/standardlausnir/'},
 ]
 
 const FooterTwo = () => {
@@ -16,7 +15,7 @@ const FooterTwo = () => {
                         <div className="inner">
                             <div className="logo text-center text-sm-left mb_sm--20">
                                 <a href="/home-one">
-                                    <img src="/assets/images/logo/logo.png" alt="Logo images"/>
+                                    <img src="/assets/images/logo/small-standardlausnir-full-logo.png" alt="Logo images"/>
                                 </a>
                             </div>
                         </div>
@@ -25,7 +24,7 @@ const FooterTwo = () => {
                         <div className="inner text-center">
                             <ul className="social-share rn-lg-size d-flex justify-content-center liststyle">
                                 {SocialShare.map((val , i) => (
-                                    <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
+                                    <li key={i}><a target="_blank" href={`${val.link}`}>{val.Social}</a></li>
                                 ))}
                             </ul>
                         </div>

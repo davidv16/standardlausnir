@@ -4,9 +4,8 @@ import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
+    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/standardlausnir'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/standardlausnir/'},
 ]
 class HeaderThree extends Component{
     constructor(props) {
@@ -52,18 +51,8 @@ class HeaderThree extends Component{
             }
         }
         const { logo, color='default-color' } = this.props;
-        let logoUrl;
-        if(logo === 'light'){
-            logoUrl = <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />;
-        }else if(logo === 'dark'){
-            logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />;
-        }else if(logo === 'symbol-dark'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-dark.png" alt="Digital Agency" />;
-        }else if(logo === 'symbol-light'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-light.png" alt="Digital Agency" />;
-        }else{
-            logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
-        }
+        let logoUrl = <img src="/assets/images/logo/rsz_standardlausnir-logo-icon.png" alt="Digital Agency" />;
+
         
         return(
             <header className={`header-area header-style-two header--fixed ${color}`}>
@@ -88,7 +77,7 @@ class HeaderThree extends Component{
                         <div className="social-share-inner">
                             <ul className="social-share social-style--2 color-black d-flex justify-content-start liststyle">
                                 {SocialShare.map((val , i) => (
-                                    <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
+                                    <li key={i}><a target="_blank" href={`${val.link}`}>{val.Social}</a></li>
                                 ))}
                             </ul>
                         </div>
