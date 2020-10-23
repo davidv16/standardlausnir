@@ -9,7 +9,7 @@ import TabTwo from "../elements/tab/TabTwo";
 import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
-import BlogContent from "../elements/blog/BlogContent";
+
 
 const SlideList = [
     {
@@ -28,7 +28,7 @@ const Home = () => {
     // const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
-            <Helmet pageTitle="Heim" />
+            <Helmet />
 
             <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
@@ -50,7 +50,6 @@ const Home = () => {
 
                                             </TextLoop>{" "}
                                             </h1>
-                                            <h2></h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>

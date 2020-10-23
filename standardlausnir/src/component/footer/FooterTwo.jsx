@@ -1,9 +1,10 @@
 import React from 'react';
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
+import {FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
 
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/standardlausnir'},
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/standardlausnir/'},
+    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/standardlausnir/'},
 ]
 
 const FooterTwo = () => {
@@ -24,7 +25,7 @@ const FooterTwo = () => {
                         <div className="inner text-center">
                             <ul className="social-share rn-lg-size d-flex justify-content-center liststyle">
                                 {SocialShare.map((val , i) => (
-                                    <li key={i}><a target="_blank" href={`${val.link}`}>{val.Social}</a></li>
+                                    <li key={i}><a target="_blank" rel="noopener noreferrer" href={`${val.link}`}>{val.Social}</a></li>
                                 ))}
                             </ul>
                         </div>

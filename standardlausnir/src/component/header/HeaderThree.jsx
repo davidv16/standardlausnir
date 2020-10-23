@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram ,FaFacebookF , FaLinkedinIn } from "react-icons/fa";
 import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
 
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/standardlausnir'},
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/standardlausnir/'},
+    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/standardlausnir/'},
 ]
 class HeaderThree extends Component{
     constructor(props) {
@@ -50,7 +51,7 @@ class HeaderThree extends Component{
                 }
             }
         }
-        const { logo, color='default-color' } = this.props;
+        const { color='default-color' } = this.props;
         let logoUrl = <img src="/assets/images/logo/rsz_standardlausnir-logo-icon.png" alt="Digital Agency" />;
 
         
@@ -77,7 +78,7 @@ class HeaderThree extends Component{
                         <div className="social-share-inner">
                             <ul className="social-share social-style--2 color-black d-flex justify-content-start liststyle">
                                 {SocialShare.map((val , i) => (
-                                    <li key={i}><a target="_blank" href={`${val.link}`}>{val.Social}</a></li>
+                                    <li key={i}><a target="_blank" rel="noopener noreferrer" href={`${val.link}`}>{val.Social}</a></li>
                                 ))}
                             </ul>
                         </div>

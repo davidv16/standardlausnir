@@ -1,14 +1,14 @@
 import React ,{ Component }from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FiCode , FiUsers, FiCloud } from "react-icons/fi";
 
 const ServiceList = [
     {
-        icon: <FiCast />,
+        icon: <FiCode />,
         title: 'Hugbúnaðargerð',
         description: 'Smíða vefsíður, vefþjónustur og annan hugbúnað frá grunni eftir þörfum.'
     },
     {
-        icon: <FiLayers />,
+        icon: <FiCloud />,
         title: 'Vefsíðugerð',
         description: 'Smíða wordpress vefsíður fyrir lítil og miðlungs fyrirtæki. Vefverslanir og einfaldar upplýsingasíður.'
     },

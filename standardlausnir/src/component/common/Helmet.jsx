@@ -6,7 +6,7 @@ class PageHelmet extends Component{
         return(
             <React.Fragment>
                 <Helmet>
-                    <title>{this.props.pageTitle} || Standard lausnir </title>
+                    <title>Standard lausnir</title>
                     <meta name="description" content="Standardlausnir - Persónuleg og áreiðanleg tölvuþjónusta." />
                 </Helmet>
             </React.Fragment>

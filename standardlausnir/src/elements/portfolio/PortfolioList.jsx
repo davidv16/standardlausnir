@@ -52,7 +52,7 @@ class PortfolioList extends Component{
             <React.Fragment> 
                 {list.map((value , index) => (
                         <div className={`${column}`} key={index}>
-                            <a target="_blank" href={value.link}>
+                            <a target="_blank" rel="noopener noreferrer" href={value.link}>
                                 <div className={`portfolio ${styevariation}`}>
                                     <div className="thumbnail-inner">
                                         <div className={`thumbnail ${value.image}`}></div>
