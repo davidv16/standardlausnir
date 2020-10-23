@@ -6,14 +6,22 @@ class ContactThree extends Component{
     constructor(props){
         super(props);
         this.state = {
-            Name: '',
-            Email: '',
-            Subject: '',
-            Message: '',
+            data: {
+                Name: '',
+                Email: '',
+                Subject: '',
+                Message: ''
+            }, 
+            message: {
+                showMessage: false
+            }
         };
-        
+        this.hideComponent = this.hideComponent.bind(this);
     }
     
+    hideComponent() {
+        this.setState({ showMessage: !this.state.showMessage });
+    }
     
 
     handleSubmit(e){
@@ -23,20 +31,22 @@ class ContactThree extends Component{
           url:"https://2wjekpzwxj.execute-api.eu-west-1.amazonaws.com/01/contact-form", 
           data:  this.state
         }).then((response) => {
-            alert("Takk fyrir skilaboðin, við munum hafa samband eins fljótt og auðið er."); 
-            this.resetForm()
+            // alert("Takk fyrir skilaboðin, við munum hafa samband eins fljótt og auðið er."); 
+            this.resetForm();
           
-        }, (error) => {
+        })
+        .catch((error) => {
             console.log(error);
         })
       }
     
       resetForm(){
-        this.setState({Name: '', Email: '', Subject: '', Message: ''})
+        this.setState({Name: '', Email: '', Subject: '', Message: '', showMessage: false})
       }
 
 
     render(){
+        const { showMessage } = this.state;
         return(
             <div className="contact-form--1">
                 <div className="container">
@@ -57,7 +67,7 @@ class ContactThree extends Component{
                                             name="name"
                                             id="item01"
                                             value={this.state.Name}
-                                            onChange={(e)=>{this.setState({Name: e.target.value});}}
+                                            onChange={this.onNameChange.bind(this)}
                                             placeholder="Nafn *"
                                         />
                                     </label>
@@ -68,7 +78,7 @@ class ContactThree extends Component{
                                             name="email"
                                             id="item02"
                                             value={this.state.Email}
-                                            onChange={(e)=>{this.setState({Email: e.target.value});}}
+                                            onChange={this.onEmailChange.bind(this)}
                                             placeholder="Email *"
                                         />
                                     </label>
@@ -79,7 +89,7 @@ class ContactThree extends Component{
                                             name="subject"
                                             id="item03"
                                             value={this.state.Subject}
-                                            onChange={(e)=>{this.setState({Subject: e.target.value});}}
+                                            onChange={this.onSubjectChange.bind(this)}
                                             placeholder="Viðfangsefni"
                                         />
                                     </label>
@@ -89,12 +99,12 @@ class ContactThree extends Component{
                                             id="item04"
                                             name="message"
                                             value={this.state.Message}
-                                            onChange={(e)=>{this.setState({Message: e.target.value});}}
+                                            onChange={this.onMessageChange.bind(this)}
                                             placeholder="Skilaboð"
                                         />
                                     </label>
-                                    <Alert variant="success">Takk fyrir skilaboðin, við munum svara eins fljótt og auðið er! </Alert>
-                                    <button type="submit" className="rn-button-style--2 btn-solid" value="submit" name="submit" id="mc-embedded-subscribe">Senda fyrirspurn</button>
+                                    {showMessage && <Alert variant="success" >Takk fyrir skilaboðin, við munum svara eins fljótt og auðið er! </Alert>}
+                                    <button type="submit" onClick={() => this.hideComponent()} className="rn-button-style--2 btn-solid" value="submit" name="submit" id="mc-embedded-subscribe">Senda fyrirspurn</button>
                                 </form>
                             </div>
                         </div>
