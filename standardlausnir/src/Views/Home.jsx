@@ -142,7 +142,7 @@ const Home = () => {
             {/* Start COntact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--5">
-                    <ContactThree contactImages="/assets/images/about/ben-kolde-bs2Ba7t69mM-unsplash.jpg" contactTitle="Vinnum saman." />
+                    <ContactThree contactImages="/assets/images/about/ben-kolde-bs2Ba7t69mM-unsplash.jpg" contactTitle="Vinnum saman!" />
                 </div>
             </div>
             {/* End COntact Area */}

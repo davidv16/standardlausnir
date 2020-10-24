@@ -15,7 +15,7 @@ const FooterTwo = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div className="inner">
                             <div className="logo text-center text-sm-left mb_sm--20">
-                                <a href="/home-one">
+                                <a href="/">
                                     <img src="/assets/images/logo/small-standardlausnir-full-logo.png" alt="Logo images"/>
                                 </a>
                             </div>
@@ -30,15 +30,25 @@ const FooterTwo = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
-                            <div className="text">
-                                <p>© {(new Date().getFullYear())} Standard lausnir -  Allur réttur áskilinn.</p>
-                            </div>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div className="inner text-center">
+                            <p className="description"><a href="mailto:standardlausnir@standardlausnir.is"> standardlausnir@standardlausnir.is</a></p>
                         </div>
                     </div>
-                </div>
+                </div>                   
             </div>
+            <div className="container"><div className="row"></div></div>
+            <div className="container">
+                <div className="row">
+                    <div class="col-lg-4"></div>
+                    <div className="col-lg-4">
+                        <div className="inner text-center">
+                            <p>© {(new Date().getFullYear())} Standard lausnir -  Allur réttur áskilinn.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>     
         </div>
     )
 }
