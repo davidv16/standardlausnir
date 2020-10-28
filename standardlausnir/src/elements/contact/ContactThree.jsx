@@ -26,14 +26,16 @@ class ContactThree extends Component{
 
     handleSubmit(e){
         e.preventDefault();
+        this.hideComponent();
         axios({
           method: "POST", 
           url:"https://2wjekpzwxj.execute-api.eu-west-1.amazonaws.com/01/contact-form", 
           data:  this.state
         }).then((response) => {
             // alert("Takk fyrir skilaboðin, við munum hafa samband eins fljótt og auðið er."); 
+            
             this.resetForm();
-          
+            
         })
         .catch((error) => {
             console.log(error);
@@ -69,6 +71,7 @@ class ContactThree extends Component{
                                             value={this.state.Name}
                                             onChange={this.onNameChange.bind(this)}
                                             placeholder="Nafn *"
+                                            required={true}
                                         />
                                     </label>
 
@@ -80,6 +83,7 @@ class ContactThree extends Component{
                                             value={this.state.Email}
                                             onChange={this.onEmailChange.bind(this)}
                                             placeholder="Email *"
+                                            required={true}
                                         />
                                     </label>
 
@@ -104,7 +108,7 @@ class ContactThree extends Component{
                                         />
                                     </label>
                                     {showMessage && <Alert variant="success" >Takk fyrir skilaboðin, við munum svara eins fljótt og auðið er! </Alert>}
-                                    <button type="submit" onClick={() => this.hideComponent()} className="rn-button-style--2 btn-solid" value="submit" name="submit" id="mc-embedded-subscribe">Senda fyrirspurn</button>
+                                    <button type="submit" className="rn-button-style--2 btn-solid" value="submit" name="submit" id="mc-embedded-subscribe">Senda fyrirspurn</button>
                                 </form>
                             </div>
                         </div>
