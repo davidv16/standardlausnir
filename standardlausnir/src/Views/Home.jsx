@@ -71,7 +71,7 @@ const Home = () => {
                             <div className="row row--35 align-items-center">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/13221049_1262594263750778_2277274847664403457_n.jpg" alt="About Images"/>
+                                        <img className="w-100" src="/assets/images/about/DSC_1142.png" alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -142,7 +142,7 @@ const Home = () => {
             {/* Start COntact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--5">
-                    <ContactThree contactImages="/assets/images/about/ben-kolde-bs2Ba7t69mM-unsplash.jpg" contactTitle="Vinnum saman!" />
+                    <ContactThree contactImages="/assets/images/about/DSC_1128-Edit.png" contactTitle="Vinnum saman!" />
                 </div>
             </div>
             {/* End COntact Area */}

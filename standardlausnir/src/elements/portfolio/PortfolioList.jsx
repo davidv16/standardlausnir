@@ -39,7 +39,7 @@ const PortfolioListContent = [
         image: 'standardlausnir',
         category: 'Vefsíðugerð',
         title: 'Standard lausnir',
-        description: 'Vefsíða standardlausnir.is skrifuð í react.js og node.js api í AWS lambda fyrir contact form. Lén og vefur hýstur á Amazon AWS.',
+        description: 'Vefsíða standardlausnir.is skrifuð í react.js og node.js api í AWS lambda fyrir contact form. Lén, email og vefur hýstur á Amazon AWS.',
         link:'standardlausnir.is'
     }
 ]

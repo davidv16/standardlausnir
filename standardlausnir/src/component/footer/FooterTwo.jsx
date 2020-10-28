@@ -40,13 +40,13 @@ const FooterTwo = () => {
             <div className="container"><div className="row"></div></div>
             <div className="container">
                 <div className="row">
-                    <div class="col-lg-4"></div>
+                    <div className="col-lg-4"></div>
                     <div className="col-lg-4">
                         <div className="inner text-center">
                             <p>© {(new Date().getFullYear())} Standard lausnir -  Allur réttur áskilinn.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4"></div>
+                    <div className="col-lg-4"></div>
                 </div>
             </div>     
         </div>
