@@ -1,6 +1,6 @@
-import React, { Component } from "react"
-import axios from 'axios'
-import Alert from 'react-bootstrap/Alert'
+import React, { Component } from "react";
+import axios from 'axios';
+import Alert from 'react-bootstrap/Alert';
 
 class ContactThree extends Component{
     constructor(props){
@@ -12,68 +12,43 @@ class ContactThree extends Component{
                 Subject: '',
                 Message: ''
             }, 
-            errors: {
-                showSuccess: false,
-                showError: false,
-                Math: ''
+            message: {
+                showMessage: false
             }
-        }
-        this.showSuccess = this.showSuccess.bind(this)
-        this.showError = this.showError.bind(this)
+        };
+        this.hideComponent = this.hideComponent.bind(this);
     }
     
-    showSuccess() {
-        this.setState({ showSuccess: !this.state.showSuccess })
-    }
-
-    showError() {
-      this.setState({ showError: !this.state.showError})
-    }
-
-    handleInput(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-          })  
+    hideComponent() {
+        this.setState({ showMessage: !this.state.showMessage });
     }
     
 
     handleSubmit(e){
-        e.preventDefault()
-        this.resetErrors()
-
-        const { Math } = this.state
-        console.log(Math)
-        if( Math === '6') {
-          this.showSuccess()
-          axios({
-            method: "POST", 
-            url:"https://2wjekpzwxj.execute-api.eu-west-1.amazonaws.com/01/contact-form", 
-            data:  this.state
-          }).then((response) => {
-              this.resetForm()
-
-          })
-          .catch((error) => {
-              console.log(error)
-          }) 
-        } else {
-          this.showError()
-        }
-           
+        e.preventDefault();
+        this.hideComponent();
+        axios({
+          method: "POST", 
+          url:"https://2wjekpzwxj.execute-api.eu-west-1.amazonaws.com/01/contact-form", 
+          data:  this.state
+        }).then((response) => {
+            // alert("Takk fyrir skilaboðin, við munum hafa samband eins fljótt og auðið er."); 
+            
+            this.resetForm();
+            
+        })
+        .catch((error) => {
+            console.log(error);
+        })
       }
     
-      resetForm() {
-        this.setState({ Name: '', Email: '', Subject: '', Message: '', Math: '' })
-        this.resetErrors()
-      }
-
-      resetErrors() {
-        this.setState({ showSuccess: false, showError: false })
+      resetForm(){
+        this.setState({Name: '', Email: '', Subject: '', Message: '', showMessage: false})
       }
 
 
     render(){
-        const { showSuccess, showError } = this.state
+        const { showMessage } = this.state;
         return(
             <div className="contact-form--1">
                 <div className="container">
@@ -88,64 +63,51 @@ class ContactThree extends Component{
                                 <form  id="contact-form" 
                                     onSubmit={this.handleSubmit.bind(this)} 
                                     method="POST">
-                                    <label htmlFor="Name">
+                                    <label htmlFor="name">
                                         <input
                                             type="text"
-                                            name="Name"
+                                            name="name"
                                             id="item01"
                                             value={this.state.Name}
-                                            onChange={this.handleInput.bind(this)}
+                                            onChange={this.onNameChange.bind(this)}
                                             placeholder="Nafn *"
                                             required={true}
                                         />
                                     </label>
 
-                                    <label htmlFor="Email">
+                                    <label htmlFor="email">
                                         <input
                                             type="text"
-                                            name="Email"
+                                            name="email"
                                             id="item02"
                                             value={this.state.Email}
-                                            onChange={this.handleInput.bind(this)}
+                                            onChange={this.onEmailChange.bind(this)}
                                             placeholder="Email *"
                                             required={true}
                                         />
                                     </label>
 
-                                    <label htmlFor="Subject">
+                                    <label htmlFor="subject">
                                         <input
                                             type="text"
-                                            name="Subject"
+                                            name="subject"
                                             id="item03"
                                             value={this.state.Subject}
-                                            onChange={this.handleInput.bind(this)}
+                                            onChange={this.onSubjectChange.bind(this)}
                                             placeholder="Viðfangsefni"
                                         />
                                     </label>
-                                    <label htmlFor="Message">
+                                    <label htmlFor="message">
                                         <textarea
                                             type="text"
                                             id="item04"
-                                            name="Message"
+                                            name="message"
                                             value={this.state.Message}
-                                            onChange={this.handleInput.bind(this)}
+                                            onChange={this.onMessageChange.bind(this)}
                                             placeholder="Skilaboð"
                                         />
                                     </label>
-                                    <label htmlFor="Math">
-                                        <input
-                                            type="number"
-                                            name="Math"
-                                            id="item05"
-                                            value={this.state.Math}
-                                            onChange={this.handleInput.bind(this)}
-                                            placeholder="Hver er summan af 4 og 2? *"
-                                            required={true}
-                                        />
-                                    </label>
-                                    {showSuccess && <Alert variant="success" >Takk fyrir skilaboðin, við munum svara eins fljótt og auðið er! </Alert>}
-                                    {showError && <Alert variant="danger" >Vinsamlegast reyndu aftur. </Alert>}
-
+                                    {showMessage && <Alert variant="success" >Takk fyrir skilaboðin, við munum svara eins fljótt og auðið er! </Alert>}
                                     <button type="submit" className="rn-button-style--2 btn-solid" value="submit" name="submit" id="mc-embedded-subscribe">Senda fyrirspurn</button>
                                 </form>
                             </div>
@@ -161,6 +123,21 @@ class ContactThree extends Component{
         )
     }
 
+    onNameChange(e) {
+        this.setState({Name: e.target.value})
+    }
+
+    onEmailChange(e) {
+        this.setState({Email: e.target.value})
+    }
+
+    onSubjectChange(e) {
+        this.setState({Subject: e.target.value})
+    }
+
+    onMessageChange(e) {
+        this.setState({Message: e.target.value})
+    }
 }
     
 export default ContactThree;
