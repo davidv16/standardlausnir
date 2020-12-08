@@ -3,50 +3,50 @@ import React, { Component } from "react";
 const PortfolioListContent = [
     {
         image: 'maul',
-        category: 'Hugbúnaðargerð',
+        category: 'portfolio.category1',
         title: 'Maul Reykjavík',
-        description: 'Forritun og gagnavinnsla í Amazon AWS.',
+        description: 'portfolio.description1',
         link:'https://maul.is'
     },
     {
         image: 'vidgerdir',
-        category: 'Tölvuþjónusta',
+        category: 'portfolio.category2',
         title: 'Ísprjón ehf.',
-        description: 'Tækniþjónusta og viðgerðir.'
+        description: 'portfolio.description2'
     },
     {
         image: 'friggz',
-        category: 'Vefsíðugerð',
+        category: 'portfolio.category3',
         title: 'Friggz sf.',
-        description: 'Vefsíða Friggz sf. smíðuð í Wordpress af Standard lausnum ',
+        description: 'portfolio.description3',
         link:'https://friggz.is'
     },
     {
         image: 'oba',
-        category: 'Vefsíðugerð',
+        category: 'portfolio.category4',
         title: 'Ottó B Arnar ehf.',
-        description: 'Vefsíða Ottó B Arnar ehf. í Wordpress af Standard lausnum',
+        description: 'portfolio.description4',
         link:'https://oba.is'
     },
     {
         image: 'code',
-        category: 'Hugbúnaðargerð',
+        category: 'portfolio.category5',
         title: 'SAT4N - Simple Administrative Tools for Networking.',
-        description: 'Lokaverkefni í tölvunarfræði í HR. Vefþjónusta á local neti sem stýrir netbúnaði frá cisco.',
+        description: 'portfolio.description5',
         link:'http://hdl.handle.net/1946/34047'
     },
     {
         image: 'standardlausnir',
-        category: 'Vefsíðugerð',
+        category: 'portfolio.category6',
         title: 'Standard lausnir',
-        description: 'Vefsíða standardlausnir.is skrifuð í react.js og node.js api í AWS lambda fyrir contact form. Lén, email og vefur hýstur á Amazon AWS.',
+        description: 'portfolio.description6',
         link:'standardlausnir.is'
     }
 ]
 
 class PortfolioList extends Component{
     render(){
-        const {column , styevariation } = this.props;
+        const {column , styevariation, t } = this.props;
         const list = PortfolioListContent.slice(0 , this.props.item);
         return(
             <React.Fragment> 
@@ -60,9 +60,9 @@ class PortfolioList extends Component{
                                     </div>
                                     <div className="content">
                                             <div className="inner">
-                                                <p>{value.category}</p>
+                                                <p>{t(value.category)}</p>
                                                 <h4>{value.title}</h4>
-                                                <h5>{value.description}</h5>
+                                                <h5>{t(value.description)}</h5>
                                             </div>                                
                                     </div>
                                 </div>

@@ -1,0 +1,97 @@
+{
+  "Navigation" : {
+    "NavItem1": "Forsíða",
+    "NavItem2": "Um",
+    "NavItem3": "Þjónusta",
+    "NavItem4": "Verkefni",
+    "NavItem5": "Hafðu samband"
+  },
+  "home": {
+    "title": "Standard lausnir"
+  },
+  "job": {
+    "title1": "Vefsíðugerð",
+    "title2": "Hugbúnaðargerð",
+    "title3": "Tölvu og tækniráðgjöf"
+  },
+  "about" : {
+    "title": "Um mig",
+    "description": "Ég heiti Davíð V. Arnalds og er Kerfisfræðingur og Rafeindavirki. Ég sérhæfi mig í vefsíðu/hugbúnaðargerð, tölvu og tækniráðgjöf og viðgerðum á rafeindabúnaði."
+  },
+  "tab": {
+    "tab1": "Megin áherslur",
+    "tab3": "Reynsla",
+    "tab4": "Menntun"
+  },
+  "focuspanel": {
+    "focus1": "Vefsíðugerð",
+    "focus2": "Vefþjónustuþróun",
+    "focus3": "Skýjaráðgjöf",
+    "focus4": "Tölvuráðgjöf og viðgerðir",
+    "description1": "Smíði fallegra og snyrtilegra heimasíðna eftir þörfum",
+    "description2": "Vefþjónustusmíði, vefforritun, breytingar og bætur",
+    "description3": "Hýsing vefja, tölvupósts og gagnagrunna í skýi",
+    "description4": "Ráðgjöf, tölvuaðstoð og viðgerðir á rafeindabúnaði"
+  },
+  "experiencepanel": {
+    "job1": "Forritari",
+    "job2": "Þjónustustjóri",
+    "job3": "Tæknimaður",
+    "job4": "Umsjónarmaður hljóð og mynd verkstæðis",
+    "job5": "Rafeindavirki",
+    "company1": " - Standard lausnir",
+    "company2": " - OBA",
+    "company3": " - Optima ",
+    "company4": " - Nýherji ",
+    "company5": " - Marel ",
+    "years1": " 2019 - núverandi",
+    "years2": " 2014 - núverandi"
+  },
+  "educationpanel": {
+    "diploma1": "Diplóma í Tölvunarfræði",
+    "diploma2": "Sveinspróf í Rafeindavirkjun",
+    "school1": " - Háskólinn í Reykjavík",
+    "school2": " - Tækniskólinn í Reykjavík"
+  },
+  "service": {
+    "title": "Þjónusta",
+    "description": "Standard lausnir kappkosta að veita persónulega, faglega og sanngjarna þjónustu.",
+    "service1": "Hugbúnaðargerð",
+    "servicedescription1": "Smíða vefsíður, vefþjónustur og annan hugbúnað frá grunni eftir þörfum",
+    "service2": "Vefsíðugerð",
+    "servicedescription2": "Smíða wordpress vefsíður fyrir lítil og miðlungs fyrirtæki Vefverslanir og einfaldar upplýsingasíður",
+    "service3": "Tölvu/tækniaðstoð og ráðgjöf",
+    "servicedescription3": "Aðstoða með helstu tölvuvandamál, uppsetning hugbúnaðar, vélbúnaðar og viðgerðir"
+  },
+  "portfolio": {
+    "title": "Verkefni og viðskiptavinir",
+    "description": "Hér eru nokkur helstu verkefni og viðskiptavinir Standard lausna.",
+    "category1": "Hugbúnaðargerð",
+    "category2": "Tölvuþjónusta",
+    "category3": "Vefsíðugerð",
+    "category4": "Vefsíðugerð",
+    "category5": "Hugbúnaðargerð",
+    "category6": "Vefsíðugerð",
+    "description1": "Forritun og gagnavinnsla í Amazon AWS",
+    "description2": "Tækniþjónusta og viðgerðir",
+    "description3": "Vefsíða Friggz sf smíðuð í Wordpress af Standard lausnum ",
+    "description4": "Vefsíða Ottó B Arnar ehf í Wordpress af Standard lausnum",
+    "description5": "Lokaverkefni í tölvunarfræði í HR Vefþjónusta á local neti sem stýrir netbúnaði frá cisco",
+    "description6": "Vefsíða standardlausniris skrifuð í Reactjs og Nodejs api í AWS lambda fyrir contact form Lén, email og vefur hýstur á Amazon AWS"
+  },
+  "contact": {
+    "title": "Vinnum saman!",
+    "description1": "Ég er laus í verkefni Hafðu samband í síma: ",
+    "description2": ", eða fylltu út formið hér að neðan: ",
+    "name": "Nafn *",
+    "email": "Tölvupóstur *",
+    "subject": "Viðfangsefni",
+    "message": "Skilaboð",
+    "math": "Hver er summan af 4 og 2? *",
+    "button": "Senda fyrirspurn",
+    "successmessage": "Takk fyrir skilaboðin, við munum svara eins fljótt og auðið er! ",
+    "dangermessage": "Vinsamlegast reyndu aftur "
+  },
+  "footer": "Standard lausnir -  Allur réttur áskilinn",
+  "logo": "/assets/images/logo/standardlausnir-full-logo.png"
+}

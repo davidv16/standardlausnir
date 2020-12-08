@@ -1,0 +1,97 @@
+{
+  "Navigation" : {
+    "NavItem1": "Home",
+    "NavItem2": "About",
+    "NavItem3": "Services",
+    "NavItem4": "Projects",
+    "NavItem5": "Contact"
+  },
+  "home": {
+    "title": "Standard Solutions"
+  },
+  "job": {
+    "title1": "Web Development",
+    "title2": "Software Development",
+    "title3": "IT consulting"
+  },
+  "about" : {
+    "title": "About",
+    "description": "My name is Davíð V. Arnalds and I am an Systems Anylist and Electronics Engineer. I specialize in Web/Software Development, IT and technical services and Electronics repair."
+  },
+  "tab": {
+    "tab1": "Main focus",
+    "tab3": "Experience",
+    "tab4": "Education"
+  },
+  "focuspanel": {
+    "focus1": "Website Development",
+    "focus2": "Web Service Development",
+    "focus3": "Cloud Consulting",
+    "focus4": "Computer consulting services and repair",
+    "description1": "Build beautiful and well structured websites per customer's needs",
+    "description2": "Build web services, web developemnt, changes and modifications",
+    "description3": "Help customers host websites, email and databases in cloud services",
+    "description4": "Consulting, computer services and electronics repair/setup"
+  },
+  "experiencepanel": {
+    "job1": "Programmer",
+    "job2": "Service Manager",
+    "job3": "Technician",
+    "job4": "Workshop manager",
+    "job5": "Electronics Engineer",
+    "company1": " - Standard Solutions",
+    "company2": " - OBA",
+    "company3": " - Optima ",
+    "company4": " - Nýherji ",
+    "company5": " - Marel ",
+    "years1": " 2019 - Current",
+    "years2": " 2014 - Current"
+  },
+  "educationpanel": {
+    "diploma1": "Diploma in Computer Science",
+    "diploma2": "Journeymanship in Electronics Engineering",
+    "school1": " - Reykjavík University",
+    "school2": " - Reykjavík Technical College"
+  },
+  "service": {
+    "title": "Services",
+    "description": "Standard Solutions pride themselves on delivering personal, professional services at resonable prices.",
+    "service1": "Software Development",
+    "servicedescription1": "Build websites, web services and other software from scratch or join existing projects per customers request",
+    "service2": "Website Development",
+    "servicedescription2": "Wordpress website development for small to mid size companies eCommerce, Booking and Information Websites",
+    "service3": "IT/Technical Services and Consulting",
+    "servicedescription3": "Assist with computer hardware/software issues, software/hardware installation and repair"
+  },
+  "portfolio": {
+    "title": "Projects and customers",
+    "description": "Here are some of the main projects and customers of Standard Solutions.",
+    "category1": "Software Development",
+    "category2": "Computer Service",
+    "category3": "Web Development",
+    "category4": "Web Development",
+    "category5": "Software Development",
+    "category6": "Web Development",
+    "description1": "Programming and Data handling in Amazon AWS",
+    "description2": "Computer Services and Repair",
+    "description3": "Friggz sf Website developed in Wordpress by Standard Solutions ",
+    "description4": "Ottó B Arnar ehf Website developed in Wordpress by Standard Solutions ",
+    "description5": "Bachelors project in Computer Science in RU Web service on a local network which controls network hardware from Cisco",
+    "description6": "standardlausniris Website written in Reactjs and Nodejs api in AWS Lambda for the contact form Domain, email and website hosted on Amazon AWS"
+  },
+  "contact": {
+    "title": "Let's work together!",
+    "description1": "I'm available for freelance work I can be reached at tel: ",
+    "description2": ", or fill out the form below: ",
+    "name": "Name *",
+    "email": "Email *",
+    "subject": "Subject",
+    "message": "Message",
+    "math": "What is the sum of 4 and 2? *",
+    "button": "Submit message",
+    "successmessage": "Thanks for the message, we will respond as soon as possible!",
+    "dangermessage": "Please try again"
+  },
+  "footer": "Standard solutions -  All rights reserved",
+  "logo": "/assets/images/logo/standardlausnir-full-logo-english.png"
+}

@@ -74,15 +74,16 @@ class ContactThree extends Component{
 
     render(){
         const { showSuccess, showError } = this.state
+        const { t } = this.props
         return(
             <div className="contact-form--1">
                 <div className="container">
                     <div className="row row--35 align-items-start">
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
-                                <h2 className="title">{this.props.contactTitle}</h2>
-                                <p className="description">Ég er laus í verkefni. Hafðu samband í síma: <a href="tel:+3548460999">846-0999</a>, email: 
-                                    <a href="mailto:standardlausnir@standardlausnir.is"> standardlausnir@standardlausnir.is</a>, eða fylltu út formið hér að neðan. </p>
+                                <h2 className="title">{t('contact.title')}</h2>
+                                <p className="description">{t('contact.description1')}<a href="tel:+3548460999">846-0999</a>, email: 
+                                    <a href="mailto:standardlausnir@standardlausnir.is"> standardlausnir@standardlausnir.is</a>{t('contact.description2')}</p>
                             </div>
                             <div className="form-wrapper">
                                 <form  id="contact-form" 
@@ -95,7 +96,7 @@ class ContactThree extends Component{
                                             id="item01"
                                             value={this.state.Name}
                                             onChange={this.handleInput.bind(this)}
-                                            placeholder="Nafn *"
+                                            placeholder={t('contact.name')}
                                             required={true}
                                         />
                                     </label>
@@ -107,7 +108,7 @@ class ContactThree extends Component{
                                             id="item02"
                                             value={this.state.Email}
                                             onChange={this.handleInput.bind(this)}
-                                            placeholder="Email *"
+                                            placeholder={t('contact.email')}
                                             required={true}
                                         />
                                     </label>
@@ -119,7 +120,7 @@ class ContactThree extends Component{
                                             id="item03"
                                             value={this.state.Subject}
                                             onChange={this.handleInput.bind(this)}
-                                            placeholder="Viðfangsefni"
+                                            placeholder={t('contact.subject')}
                                         />
                                     </label>
                                     <label htmlFor="Message">
@@ -129,7 +130,7 @@ class ContactThree extends Component{
                                             name="Message"
                                             value={this.state.Message}
                                             onChange={this.handleInput.bind(this)}
-                                            placeholder="Skilaboð"
+                                            placeholder={t('contact.message')}
                                         />
                                     </label>
                                     <label htmlFor="Math">
@@ -139,14 +140,14 @@ class ContactThree extends Component{
                                             id="item05"
                                             value={this.state.Math}
                                             onChange={this.handleInput.bind(this)}
-                                            placeholder="Hver er summan af 4 og 2? *"
+                                            placeholder={t('contact.math')}
                                             required={true}
                                         />
                                     </label>
-                                    {showSuccess && <Alert variant="success" >Takk fyrir skilaboðin, við munum svara eins fljótt og auðið er! </Alert>}
-                                    {showError && <Alert variant="danger" >Vinsamlegast reyndu aftur. </Alert>}
+        {showSuccess && <Alert variant="success" >{t('contact.successmessage')}</Alert>}
+        {showError && <Alert variant="danger" >{t('contact.dangermessage')}</Alert>}
 
-                                    <button type="submit" className="rn-button-style--2 btn-solid" value="submit" name="submit" id="mc-embedded-subscribe">Senda fyrirspurn</button>
+        <button type="submit" className="rn-button-style--2 btn-solid" value="submit" name="submit" id="mc-embedded-subscribe">{t('contact.button')}</button>
                                 </form>
                             </div>
                         </div>

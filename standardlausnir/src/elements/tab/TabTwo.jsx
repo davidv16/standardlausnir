@@ -3,11 +3,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 class TabsTwo extends Component{
     render(){
-        let 
-        tab1 = "Megin áherslur",
-        tab3 = "Reynsla",
-        tab4 = "Menntun";
         const { tabStyle } = this.props
+        const { t } = this.props
         return(
             <div>
                 {/* Start Tabs Area */}
@@ -17,29 +14,29 @@ class TabsTwo extends Component{
                             <div className="col-lg-12">
                                 <Tabs>
                                     <TabList  className={`${tabStyle}`}>
-                                        <Tab>{tab1}</Tab>
-                                        <Tab>{tab3}</Tab>
-                                        <Tab>{tab4}</Tab>
+                                        <Tab>{t('tab.tab1')}</Tab>
+                                        <Tab>{t('tab.tab3')}</Tab>
+                                        <Tab>{t('tab.tab4')}</Tab>
                                     </TabList>
 
                                     <TabPanel>
                                         <div className="single-tab-content">
                                             <ul>
                                                 <li>
-                                                    <a href="/service">Vefsíðugerð <span> - Wordpress</span></a>
-                                                    Smíði fallegra og snyrtilegra heimasíðna eftir þörfum.
+                                                    <a href="/service">{t('focuspanel.focus1')} <span> - Wordpress</span></a>
+                                                    {t('focuspanel.description1')}
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Vefþjónustuþróun <span> - React, Vue, .net, nodeJS ofl.</span></a>
-                                                    Vefþjónustusmíði, vefforritun, breytingar og bætur.
+                                                    <a href="/service">{t('focuspanel.focus2')} <span> - React, Vue, .net, nodeJS ofl.</span></a>
+                                                    {t('focuspanel.description2')}
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Skýjalausnir <span> - Amazon AWS.</span></a>
-                                                    Hýsing vefja, tölvupósts og gagnagrunna í skýi.
+                                                    <a href="/service">{t('focuspanel.focus3')} <span> - Amazon AWS.</span></a>
+                                                    {t('focuspanel.description3')}
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Tölvuráðgjöf og viðgerðir <span> </span></a>
-                                                    Ráðgjöf, tölvuaðstoð og viðgerðir á rafeindabúnaði
+                                                    <a href="/service">{t('focuspanel.focus4')} <span> </span></a>
+                                                    {t('focuspanel.description4')}
                                                 </li>
                                             </ul>
                                         </div>
@@ -49,19 +46,19 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Forritari<span> - Standard lausnir</span></a> 2019 - núverandi
+                                                   <a href="/service">{t('experiencepanel.job1')}<span>{t('experiencepanel.company1')}</span></a>{t('experiencepanel.years1')}
                                                </li>
                                                <li>
-                                                   <a href="/service">Þjónustustjóri<span> - OBA</span></a> 2014 - núverandi
+                                                   <a href="/service">{t('experiencepanel.job2')}<span>{t('experiencepanel.company2')}</span></a>{t('experiencepanel.years2')}
                                                </li>
                                                <li>
-                                                   <a href="/service">Tæknimaður<span> - Optima </span></a> 2013 - 2014
+                                                   <a href="/service">{t('experiencepanel.job3')}<span>{t('experiencepanel.company3')}</span></a> 2013 - 2014
                                                </li>
                                                <li>
-                                                   <a href="/service">Umsjónarmaður hljóð og mynd verkstæðis<span> - Nýherji </span></a> 2011 - 2013
+                                                   <a href="/service">{t('experiencepanel.job4')}<span>{t('experiencepanel.company4')}</span></a> 2011 - 2013
                                                </li>
                                                <li>
-                                                   <a href="/service">Rafeindavirki<span> - Marel </span></a> 2008 - 2011
+                                                   <a href="/service">{t('experiencepanel.job5')}<span>{t('experiencepanel.company5')}</span></a> 2008 - 2011
                                                </li>
                                            </ul>
                                        </div>
@@ -71,10 +68,10 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Diplóma í Tölvunarfræði<span> - Háskólinn í Reykjavík</span></a> 2020
+                                                   <a href="/service">{t('educationpanel.diploma1')}<span>{t('educationpanel.school1')}</span></a> 2020
                                                </li>
                                                <li>
-                                                   <a href="/service">Sveinspróf í Rafeindavirkjun<span> - Tækniskólinn í Reykjavík</span></a> 2010
+                                                   <a href="/service">{t('educationpanel.diploma2')}<span>{t('educationpanel.school2')}</span></a> 2010
                                                </li>
                                            </ul>
                                        </div>

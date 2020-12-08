@@ -2,28 +2,30 @@ import React ,{ Component }from "react";
 import { FiCode , FiUsers, FiCloud } from "react-icons/fi";
 
 const ServiceList = [
-    {
-        icon: <FiCode />,
-        title: 'Hugbúnaðargerð',
-        description: 'Smíða vefsíður, vefþjónustur og annan hugbúnað frá grunni eftir þörfum.'
-    },
-    {
-        icon: <FiCloud />,
-        title: 'Vefsíðugerð',
-        description: 'Smíða wordpress vefsíður fyrir lítil og miðlungs fyrirtæki. Vefverslanir og einfaldar upplýsingasíður.'
-    },
-    {
-        icon: <FiUsers />,
-        title: 'Tölvu/tækniaðstoð og ráðgjöf',
-        description: 'Aðstoða með helstu tölvuvandamál, uppsetning hugbúnaðar, vélbúnaðar og viðgerðir.'
-    }
+  {
+      icon: <FiCode />,
+      title: 'service.service1',
+      description: 'service.servicedescription1'
+  },
+  {
+      icon: <FiCloud />,
+      title: 'service.service2',
+      description: 'service.servicedescription2'
+  },
+  {
+      icon: <FiUsers />,
+      title: 'service.service3',
+      description: 'service.servicedescription3'
+  }
 ]
 
 
 class ServiceThree extends Component{
+  
     render(){
         const {column } = this.props;
         const ServiceContent = ServiceList.slice(0 , this.props.item);
+        const { t } = this.props
         
         return(
             <React.Fragment>
@@ -35,8 +37,8 @@ class ServiceThree extends Component{
                                         {val.icon}
                                     </div>
                                     <div className="content">
-                                        <h3 className="title">{val.title}</h3>
-                                        <p>{val.description}</p>
+                                        <h3 className="title">{t(val.title)}</h3>
+                                        <p>{t(val.description)}</p>
                                     </div>
                                 </div>
                         </div>

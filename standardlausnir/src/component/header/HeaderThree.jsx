@@ -31,6 +31,7 @@ class HeaderThree extends Component{
 
     stickyHeader () {}
 
+
     render(){
 
         window.addEventListener('scroll', function() {
@@ -54,7 +55,7 @@ class HeaderThree extends Component{
         const { color='default-color' } = this.props;
         let logoUrl = <img src="/assets/images/logo/rsz_standardlausnir-logo-icon.png" alt="Digital Agency" />;
 
-        
+        const { t, handleSetLanguage } = this.props
         return(
             <header className={`header-area header-style-two header--fixed ${color}`}>
                 <div className="header-wrapper">
@@ -66,11 +67,11 @@ class HeaderThree extends Component{
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
                             <Scrollspy className="mainmenu" items={['home','about','service','portfolio','contact']} currentClassName="is-current" offset={-200}>
-                                <li><a href="#home">Forsíða</a></li>
-                                <li><a href="#about">Um</a></li>
-                                <li><a href="#service">Þjónusta</a></li>
-                                <li><a href="#portfolio">Verkefni</a></li>
-                                <li><a href="#contact">Hafðu samband</a></li>
+                                <li><a href="#home">{t('Navigation.NavItem1')}</a></li>
+                                <li><a href="#about">{t('Navigation.NavItem2')}</a></li>
+                                <li><a href="#service">{t('Navigation.NavItem3')}</a></li>
+                                <li><a href="#portfolio">{t('Navigation.NavItem4')}</a></li>
+                                <li><a href="#contact">{t('Navigation.NavItem5')}</a></li>
                             </Scrollspy>
                         </nav>
                     </div>
@@ -81,6 +82,10 @@ class HeaderThree extends Component{
                                     <li key={i}><a target="_blank" rel="noopener noreferrer" href={`${val.link}`}>{val.Social}</a></li>
                                 ))}
                             </ul>
+                        </div>
+                        <div className="language-buttons">
+                          <img width="25px" alt="icelandic flag" src="/assets/images/icons/is.png" onClick={handleSetLanguage('is')}/>
+                          <img width="25px" alt="english flag" src="/assets/images/icons/en.png" onClick={handleSetLanguage('en')}/>
                         </div>
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">
