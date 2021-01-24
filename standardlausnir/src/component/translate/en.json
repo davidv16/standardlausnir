@@ -28,7 +28,7 @@
     "focus2": "Web Service Development",
     "focus3": "Cloud Consulting",
     "focus4": "Computer consulting services and repair",
-    "description1": "Build beautiful and well structured websites per customer's needs",
+    "description1": "Custom build beautiful, reactive and well structured websites to meet the customer's needs",
     "description2": "Build web services, web developemnt, changes and modifications",
     "description3": "Help customers host websites, email and databases in cloud services",
     "description4": "Consulting, computer services and electronics repair/setup"
@@ -48,10 +48,12 @@
     "years2": " 2014 - Current"
   },
   "educationpanel": {
-    "diploma1": "Diploma in Computer Science",
-    "diploma2": "Journeymanship in Electronics Engineering",
-    "school1": " - Reykjavík University",
-    "school2": " - Reykjavík Technical College"
+    "diploma1": "Course in WordPress Development",
+    "diploma2": "Diploma in Computer Science",
+    "diploma3": "Journeymanship in Electronics Engineering",
+    "school1": " - Udemy",
+    "school2": " - Reykjavík University",
+    "school3": " - Reykjavík Technical College"
   },
   "service": {
     "title": "Services",
@@ -69,15 +71,14 @@
     "category1": "Software Development",
     "category2": "Computer Service",
     "category3": "Web Development",
-    "category4": "Web Development",
-    "category5": "Software Development",
-    "category6": "Web Development",
+    "category4": "Course",
     "description1": "Programming and Data handling in Amazon AWS",
     "description2": "Computer Services and Repair",
     "description3": "Friggz sf Website developed in Wordpress by Standard Solutions ",
     "description4": "Ottó B Arnar ehf Website developed in Wordpress by Standard Solutions ",
     "description5": "Bachelors project in Computer Science in RU Web service on a local network which controls network hardware from Cisco",
-    "description6": "standardlausniris Website written in Reactjs and Nodejs api in AWS Lambda for the contact form Domain, email and website hosted on Amazon AWS"
+    "description6": "standardlausniris Website written in Reactjs and Nodejs api in AWS Lambda for the contact form Domain, email and website hosted on Amazon AWS",
+    "description7": "Course in WordPress PHP and JS development at Udemy"
   },
   "contact": {
     "title": "Let's work together!",

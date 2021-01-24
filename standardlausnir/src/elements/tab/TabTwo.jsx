@@ -68,10 +68,13 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">{t('educationpanel.diploma1')}<span>{t('educationpanel.school1')}</span></a> 2020
+                                                   <a href="/service">{t('educationpanel.diploma1')}<span>{t('educationpanel.school1')} - 2021 </span></a> 
                                                </li>
                                                <li>
-                                                   <a href="/service">{t('educationpanel.diploma2')}<span>{t('educationpanel.school2')}</span></a> 2010
+                                                   <a href="/service">{t('educationpanel.diploma2')}<span>{t('educationpanel.school2')} - 2020</span></a> 
+                                               </li>
+                                               <li>
+                                                   <a href="/service">{t('educationpanel.diploma3')}<span>{t('educationpanel.school3')} - 2010</span></a> 
                                                </li>
                                            </ul>
                                        </div>

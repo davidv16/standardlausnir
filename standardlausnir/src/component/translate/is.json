@@ -28,7 +28,7 @@
     "focus2": "Vefþjónustuþróun",
     "focus3": "Skýjaráðgjöf",
     "focus4": "Tölvuráðgjöf og viðgerðir",
-    "description1": "Smíði fallegra og snyrtilegra heimasíðna eftir þörfum",
+    "description1": "Forritun og sérsmíði fallegra og snyrtilegra heimasíðna sem mæta kröfum viðskiptavina",
     "description2": "Vefþjónustusmíði, vefforritun, breytingar og bætur",
     "description3": "Hýsing vefja, tölvupósts og gagnagrunna í skýi",
     "description4": "Ráðgjöf, tölvuaðstoð og viðgerðir á rafeindabúnaði"
@@ -48,10 +48,12 @@
     "years2": " 2014 - núverandi"
   },
   "educationpanel": {
-    "diploma1": "Diplóma í Tölvunarfræði",
-    "diploma2": "Sveinspróf í Rafeindavirkjun",
-    "school1": " - Háskólinn í Reykjavík",
-    "school2": " - Tækniskólinn í Reykjavík"
+    "diploma1": "Námskeið í WordPress forritun",
+    "diploma2": "Diplóma í Tölvunarfræði",
+    "diploma3": "Sveinspróf í Rafeindavirkjun",
+    "school1": " - Udemy",
+    "school2": " - Háskólinn í Reykjavík",
+    "school3": " - Tækniskólinn í Reykjavík"
   },
   "service": {
     "title": "Þjónusta",
@@ -69,15 +71,14 @@
     "category1": "Hugbúnaðargerð",
     "category2": "Tölvuþjónusta",
     "category3": "Vefsíðugerð",
-    "category4": "Vefsíðugerð",
-    "category5": "Hugbúnaðargerð",
-    "category6": "Vefsíðugerð",
+    "category4": "Námskeið",
     "description1": "Forritun og gagnavinnsla í Amazon AWS",
     "description2": "Tækniþjónusta og viðgerðir",
     "description3": "Vefsíða Friggz sf smíðuð í Wordpress af Standard lausnum ",
     "description4": "Vefsíða Ottó B Arnar ehf í Wordpress af Standard lausnum",
     "description5": "Lokaverkefni í tölvunarfræði í HR Vefþjónusta á local neti sem stýrir netbúnaði frá cisco",
-    "description6": "Vefsíða standardlausniris skrifuð í Reactjs og Nodejs api í AWS lambda fyrir contact form Lén, email og vefur hýstur á Amazon AWS"
+    "description6": "Vefsíða standardlausniris skrifuð í Reactjs og Nodejs api í AWS lambda fyrir contact form Lén, email og vefur hýstur á Amazon AWS",
+    "description7": "Námskeið í WordPress PHP and JS forritun hjá Udemy"
   },
   "contact": {
     "title": "Vinnum saman!",

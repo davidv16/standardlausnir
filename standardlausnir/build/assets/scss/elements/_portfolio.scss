@@ -63,6 +63,10 @@
         backface-visibility: hidden;
         transition: transform .28s ease;
         z-index: 4;
+        &.wpcertificate{
+          background-image: url(/assets/images/portfolio/wp-certificate50p.jpg);
+        }
+
         &.maul{
             background-image: url(/assets/images/portfolio/maulvefur.png);
         }
