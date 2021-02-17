@@ -51,9 +51,11 @@
     "diploma1": "Námskeið í WordPress forritun",
     "diploma2": "Diplóma í Tölvunarfræði",
     "diploma3": "Sveinspróf í Rafeindavirkjun",
+    "diploma4": "Námskeið í React, TypeScript og .net forritun",
     "school1": " - Udemy",
     "school2": " - Háskólinn í Reykjavík",
-    "school3": " - Tækniskólinn í Reykjavík"
+    "school3": " - Tækniskólinn í Reykjavík",
+    "school4": " - Udemy"
   },
   "service": {
     "title": "Þjónusta",

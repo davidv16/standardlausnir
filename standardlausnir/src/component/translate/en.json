@@ -51,9 +51,11 @@
     "diploma1": "Course in WordPress Development",
     "diploma2": "Diploma in Computer Science",
     "diploma3": "Journeymanship in Electronics Engineering",
+    "diploma4": "Course in React, TypeScript and .net Development",
     "school1": " - Udemy",
     "school2": " - Reykjavík University",
-    "school3": " - Reykjavík Technical College"
+    "school3": " - Reykjavík Technical College",
+    "school4": " - Udemy"
   },
   "service": {
     "title": "Services",

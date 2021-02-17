@@ -27,7 +27,7 @@ class TabsTwo extends Component{
                                                     {t('focuspanel.description1')}
                                                 </li>
                                                 <li>
-                                                    <a href="/service">{t('focuspanel.focus2')} <span> - React, Vue, .net, nodeJS ofl.</span></a>
+                                                    <a href="/service">{t('focuspanel.focus2')} <span> - React, Typescript, .net, nodeJS ....</span></a>
                                                     {t('focuspanel.description2')}
                                                 </li>
                                                 <li>
@@ -67,6 +67,9 @@ class TabsTwo extends Component{
                                     <TabPanel>
                                        <div className="single-tab-content">
                                            <ul>
+                                                <li>
+                                                   <a href="/service">{t('educationpanel.diploma4')}<span>{t('educationpanel.school4')} - 2021 </span></a> 
+                                               </li>
                                                <li>
                                                    <a href="/service">{t('educationpanel.diploma1')}<span>{t('educationpanel.school1')} - 2021 </span></a> 
                                                </li>
