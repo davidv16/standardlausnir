@@ -8,7 +8,7 @@ const SocialShare = [
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/standardlausnir/'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/company/standardlausnir/'},
 ]
-class HeaderThree extends Component{
+class Header extends Component{
     constructor(props) {
         super(props);
         this.menuTrigger = this.menuTrigger.bind(this);
@@ -84,8 +84,8 @@ class HeaderThree extends Component{
                             </ul>
                         </div>
                         <div className="language-buttons">
-                          <img width="25px" alt="icelandic flag" src="/assets/images/icons/is.png" onClick={handleSetLanguage('is')}/>
-                          <img width="25px" alt="english flag" src="/assets/images/icons/en.png" onClick={handleSetLanguage('en')}/>
+                          <img width="25px" alt="icelandic flag" src="/assets/images/icons/is.png" onClick={() => handleSetLanguage('is')}/>
+                          <img width="25px" alt="english flag" src="/assets/images/icons/en.png" onClick={() => handleSetLanguage('en')}/>
                         </div>
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">
@@ -101,4 +101,4 @@ class HeaderThree extends Component{
         )
     }
 }
-export default HeaderThree;
+export default Header;

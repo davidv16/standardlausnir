@@ -19,9 +19,9 @@
     "description": "Ég heiti Davíð V. Arnalds og er Kerfisfræðingur og Rafeindavirki. Ég sérhæfi mig í vefsíðu/hugbúnaðargerð, tölvu og tækniráðgjöf og viðgerðum á rafeindabúnaði."
   },
   "tab": {
-    "tab1": "Megin áherslur",
-    "tab3": "Reynsla",
-    "tab4": "Menntun"
+    "focusTab": "Megin áherslur",
+    "expTab": "Reynsla",
+    "eduTab": "Menntun"
   },
   "focuspanel": {
     "focus1": "Vefsíðugerð",

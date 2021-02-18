@@ -19,9 +19,9 @@
     "description": "My name is Davíð V. Arnalds and I am an Systems Anylist and Electronics Engineer. I specialize in Web/Software Development, IT and technical services and Electronics repair."
   },
   "tab": {
-    "tab1": "Main focus",
-    "tab3": "Experience",
-    "tab4": "Education"
+    "focusTab": "Main focus",
+    "expTab": "Experience",
+    "eduTab": "Education"
   },
   "focuspanel": {
     "focus1": "Website Development",
