@@ -40,7 +40,7 @@ const PortfolioContent = [
     category: 'portfolio.category3',
     title: 'Standard lausnir',
     description: 'portfolio.description6',
-    link: 'standardlausnir.is'
+    link: 'https://github.com/davidv16/standardlausnir'
   }
 
 ]
