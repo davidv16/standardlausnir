@@ -3,6 +3,7 @@
     "NavItem1": "Home",
     "NavItem2": "About",
     "NavItem3": "Services",
+    "NavItem6": "Clients",
     "NavItem4": "Projects",
     "NavItem5": "Contact"
   },
@@ -67,20 +68,37 @@
     "service3": "IT/Technical Services and Consulting",
     "servicedescription3": "Assist with computer hardware/software issues, software/hardware installation and repair"
   },
-  "portfolio": {
-    "title": "Projects and customers",
-    "description": "Here are some of the main projects and customers of Standard Solutions.",
-    "category1": "Software Development",
-    "category2": "Computer Service",
-    "category3": "Web Development",
-    "category4": "Course",
+  "customer": {
+    "title": "Clients",
+    "description": "Here are some projects for a few of Standard Solution's clients.",
+    "softdev": "Software Development",
+    "it": "Computer Service",
+    "webdev": "Web Development",
     "description1": "Programming and Data handling in Amazon AWS",
     "description2": "Computer Services and Repair",
     "description3": "Friggz sf Website developed in Wordpress by Standard Solutions ",
-    "description4": "Ottó B Arnar ehf Website developed in Wordpress by Standard Solutions ",
-    "description5": "Bachelors project in Computer Science in RU Web service on a local network which controls network hardware from Cisco",
-    "description6": "standardlausniris Website written in Reactjs and Nodejs api in AWS Lambda for the contact form Domain, email and website hosted on Amazon AWS",
-    "description7": "Course in WordPress PHP and JS development at Udemy"
+    "description4": "Ottó B Arnar ehf Website developed in Wordpress by Standard Solutions "
+  },
+  "portfolio": {
+    "title": "Projects and Courses",
+    "description": "Main projects and certificates from Courses.",
+    "course": "Course",
+    "webdev": "Web Development",
+    "softdev": "Software Development",
+    "courseTitle": {
+      "ts": "Web development course",
+      "wp": "Web development course",
+      "standard": "Standard lausnir",
+      "satan": "SAT4N - Simple Administrative Tools for Networking.",
+      "github": "Github"
+    },
+    "courseDescription": {
+      "ts": "Course in TypeScript with Express.js and React.js at Udemy",
+      "wp": "Course in WordPress PHP and JS development at Udemy",
+      "standard": "standardlausniris Website written in Reactjs and Nodejs api in AWS Lambda for the contact form Domain, email and website hosted on Amazon AWS",
+      "satan": "Bachelors project in Computer Science in RU Web service on a local network which controls network hardware from Cisco",
+      "github": "Here is most of my work."
+    }
   },
   "contact": {
     "title": "Let's work together!",

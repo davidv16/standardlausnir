@@ -3,6 +3,7 @@
     "NavItem1": "Forsíða",
     "NavItem2": "Um",
     "NavItem3": "Þjónusta",
+    "NavItem6": "Viðskiptavinir",
     "NavItem4": "Verkefni",
     "NavItem5": "Hafðu samband"
   },
@@ -67,20 +68,37 @@
     "service3": "Tölvu/tækniaðstoð og ráðgjöf",
     "servicedescription3": "Aðstoða með helstu tölvuvandamál, uppsetning hugbúnaðar, vélbúnaðar og viðgerðir"
   },
-  "portfolio": {
-    "title": "Verkefni og viðskiptavinir",
-    "description": "Hér eru nokkur helstu verkefni og viðskiptavinir Standard lausna.",
-    "category1": "Hugbúnaðargerð",
-    "category2": "Tölvuþjónusta",
-    "category3": "Vefsíðugerð",
-    "category4": "Námskeið",
+  "customer": {
+    "title": "Viðskiptavinir",
+    "description": "Hér eru nokkur verkefni fyrir viðskiptavini Standard lausna.",
+    "softdev": "Hugbúnaðargerð",
+    "it": "Tölvuþjónusta",
+    "webdev": "Vefsíðugerð",
     "description1": "Forritun og gagnavinnsla í Amazon AWS",
     "description2": "Tækniþjónusta og viðgerðir",
     "description3": "Vefsíða Friggz sf smíðuð í Wordpress af Standard lausnum ",
-    "description4": "Vefsíða Ottó B Arnar ehf í Wordpress af Standard lausnum",
-    "description5": "Lokaverkefni í tölvunarfræði í HR Vefþjónusta á local neti sem stýrir netbúnaði frá cisco",
-    "description6": "Vefsíða standardlausniris skrifuð í Reactjs og Nodejs api í AWS lambda fyrir contact form Lén, email og vefur hýstur á Amazon AWS",
-    "description7": "Námskeið í WordPress PHP and JS forritun hjá Udemy"
+    "description4": "Vefsíða Ottó B Arnar ehf í Wordpress af Standard lausnum"
+  },
+  "portfolio": {
+    "title": "Verkefni og kúrsar",
+    "description": "Hér eru nokkur helstu verkefni og kúrsar.",
+    "course": "Námskeið",
+    "webdev": "Vefsíðugerð",
+    "softdev": "Hugbúnaðargerð",
+    "courseTitle": {
+      "ts": "Námskeið í vefþróun",
+      "wp": "Námskeið í vefþróun",
+      "standard": "Standard lausnir",
+      "satan": "SAT4N - Simple Administrative Tools for Networking.",
+      "github": "Github"
+    },
+    "courseDescription": {
+      "ts":"Námskeið í TypeScript með Express.js og React.js hjá Udemy",
+      "wp": "Námskeið í WordPress PHP og JS forritun hjá Udemy",
+      "standard": "Vefsíða standardlausnir.is skrifuð í Reactjs og Nodejs api í AWS lambda fyrir contact form Lén, email og vefur hýstur á Amazon AWS",
+      "satan": "Lokaverkefni í tölvunarfræði í HR Vefþjónusta á local neti sem stýrir netbúnaði frá Cisco",
+      "github": "Hér eru flest verkefnin mín."
+    }
   },
   "contact": {
     "title": "Vinnum saman!",

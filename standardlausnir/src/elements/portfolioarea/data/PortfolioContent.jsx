@@ -1,48 +1,40 @@
 const PortfolioContent = [
 
   {
+    image: 'tscertificate',
+    category: 'portfolio.course',
+    title: 'portfolio.courseTitle.ts',
+    description: 'portfolio.courseDescription.ts',
+    link: 'https://github.com/davidv16/Typescript-Course'
+  },
+  {
     image: 'wpcertificate',
-    category: 'portfolio.category4',
-    title: 'Development Course',
-    description: 'portfolio.description7',
-    link: 'https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/'
-  },
-  {
-    image: 'maul',
-    category: 'portfolio.category1',
-    title: 'Maul Reykjavík',
-    description: 'portfolio.description1',
-    link: 'https://maul.is'
-  },
-  {
-    image: 'friggz',
-    category: 'portfolio.category3',
-    title: 'Friggz sf.',
-    description: 'portfolio.description3',
-    link: 'https://friggz.is'
-  },
-  {
-    image: 'oba',
-    category: 'portfolio.category3',
-    title: 'Ottó B Arnar ehf.',
-    description: 'portfolio.description4',
-    link: 'https://oba.is'
-  },
-  {
-    image: 'code',
-    category: 'portfolio.category1',
-    title: 'SAT4N - Simple Administrative Tools for Networking.',
-    description: 'portfolio.description5',
-    link: 'http://hdl.handle.net/1946/34047'
+    category: 'portfolio.course',
+    title: 'portfolio.courseTitle.wp',
+    description: 'portfolio.courseDescription.wp',
+    link: 'https://github.com/davidv16/Fictional-University-Course'
   },
   {
     image: 'standardlausnir',
-    category: 'portfolio.category3',
-    title: 'Standard lausnir',
-    description: 'portfolio.description6',
+    category: 'portfolio.webdev',
+    title: 'portfolio.courseTitle.standard',
+    description: 'portfolio.courseDescription.standard',
     link: 'https://github.com/davidv16/standardlausnir'
+  },
+  {
+    image: 'code',
+    category: 'portfolio.softdev',
+    title: 'portfolio.courseTitle.satan',
+    description: 'portfolio.courseDescription.satan',
+    link: 'http://hdl.handle.net/1946/34047'
+  },
+  {
+    image: 'github',
+    category: 'portfolio.webdev',
+    title: 'portfolio.courseTitle.github',
+    description: 'portfolio.courseDescription.github',
+    link: 'https://github.com/davidv16/'
   }
-
 ]
 
 export default PortfolioContent;

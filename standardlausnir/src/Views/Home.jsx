@@ -5,11 +5,12 @@ import Helmet from "../component/common/Helmet";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 import SliderArea from "../elements/sliderarea/SliderArea"
-import PortfolioArea from "../elements/portfolioarea/PortfolioArea"
+import CustomerArea from "../elements/customerarea/CustomerArea"
 import AboutArea from '../elements/about/AboutArea';
 import ServiceArea from '../elements/servicearea/ServiceArea'
 import ContactArea from '../elements/contact/ContactArea';
 import PropTypes from 'prop-types';
+import PortfolioArea from '../elements/portfolioarea/PortfolioArea'
 
 // Translation Higher Order Component
 import {
@@ -44,6 +45,7 @@ function Home(props) {
       <SliderArea t={t} />
       <AboutArea t={t} />
       <ServiceArea t={t} />
+      <CustomerArea t={t} />
       <PortfolioArea t={t} />
       <ContactArea t={t} />
       <Footer t={t} />

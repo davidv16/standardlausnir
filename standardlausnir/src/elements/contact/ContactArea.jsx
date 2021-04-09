@@ -5,7 +5,7 @@ export default function ContactArea(props) {
   const { t } = props;
   return (
     <div id="contact" className="fix">
-      <div className="rn-contact-area ptb--120 bg_color--5">
+      <div className="rn-contact-area ptb--120 bg_color--1">
         <ContactForm t={t} contactImages="/assets/images/about/DSC_1128-Edit.png" />
       </div>
     </div>

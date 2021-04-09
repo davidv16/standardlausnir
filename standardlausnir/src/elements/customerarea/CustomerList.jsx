@@ -1,12 +1,12 @@
 import React from 'react';
-import PortfolioContent from './data/PortfolioContent';
+import CustomerContent from './data/CustomerContent';
 
-export default function CertificateList(props) {
+export default function CustomerList(props) {
   const { column, styevariation, t } = props;
 
   return (
     <React.Fragment>
-      {PortfolioContent.map((item, i) => (
+      {CustomerContent.map((item, i) => (
         <div className={`${column}`} key={i}>
           <a target="_blank" rel="noopener noreferrer" href={item.link}>
             <div className={`portfolio ${styevariation}`}>
@@ -17,7 +17,7 @@ export default function CertificateList(props) {
               <div className="content">
                 <div className="inner">
                   <p>{t(item.category)}</p>
-                  <h4>{t(item.title)}</h4>
+                  <h4>{item.title}</h4>
                   <h5>{t(item.description)}</h5>
                 </div>
               </div>

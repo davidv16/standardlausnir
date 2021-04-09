@@ -66,10 +66,11 @@ class Header extends Component{
                             </a>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
-                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio','contact']} currentClassName="is-current" offset={-200}>
+                            <Scrollspy className="mainmenu" items={['home','about','service','clients','portfolio','contact']} currentClassName="is-current" offset={-200}>
                                 <li><a href="#home">{t('Navigation.NavItem1')}</a></li>
                                 <li><a href="#about">{t('Navigation.NavItem2')}</a></li>
                                 <li><a href="#service">{t('Navigation.NavItem3')}</a></li>
+                                <li><a href="#clients">{t('Navigation.NavItem6')}</a></li>
                                 <li><a href="#portfolio">{t('Navigation.NavItem4')}</a></li>
                                 <li><a href="#contact">{t('Navigation.NavItem5')}</a></li>
                             </Scrollspy>
