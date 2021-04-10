@@ -86,8 +86,8 @@
     "webdev": "Vefsíðugerð",
     "softdev": "Hugbúnaðargerð",
     "courseTitle": {
-      "ts": "Námskeið í vefþróun",
-      "wp": "Námskeið í vefþróun",
+      "ts": "Námskeið í TypeScript vefþróun",
+      "wp": "Námskeið í WordPress vefþróun",
       "standard": "Standard lausnir",
       "satan": "SAT4N - Simple Administrative Tools for Networking.",
       "github": "Github"

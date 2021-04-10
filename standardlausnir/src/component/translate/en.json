@@ -86,8 +86,8 @@
     "webdev": "Web Development",
     "softdev": "Software Development",
     "courseTitle": {
-      "ts": "Web development course",
-      "wp": "Web development course",
+      "ts": "Course in TypeScript Web Development",
+      "wp": "Course in WordPress Web Development",
       "standard": "Standard lausnir",
       "satan": "SAT4N - Simple Administrative Tools for Networking.",
       "github": "Github"
